@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 120px 15px 115px;
+  gap: 30px;
+  background-color: #FFF; /*// todo del  it*/
+}
+.logoBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px
+}
+
+.profileBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  gap: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4D4D4F;
+  
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #F9F9FB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification {
+  position: relative;
+  fill: #FFFFFF;
+}
+
+.notificationCount {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #009CB4;
+  border-radius: 50%;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  right: 0px;
+  top: 0px;
+  z-index: 2;
+}
+.divider {
+  height: 48px;
+  width: 2px;
+  border-radius: 3px;
+  background-color: #F4F3F5;;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.arrow {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  margin: 0;
+  background: url('/public/assets/svg/upper-arrow.svg') no-repeat scroll -5px -3px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
