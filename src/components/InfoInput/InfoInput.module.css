@@ -1,0 +1,24 @@
+.searchInput {
+  width: 100%;
+  height: 56px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  padding-left: 39px ;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #F9F9FB;
+  color: #231F20;
+  box-sizing: border-box;
+  background: url('/public/assets/svg/search-light.svg') no-repeat scroll 10px 15px #FFF;
+}
+
+.searchInput::placeholder {
+  color: #C6C6C6;
+}
+
+.searchInput:hover, .searchInput:focus {
+  border: 1px solid #009CB4;
+  background: url('/public/assets/svg/search-light.svg') no-repeat scroll 10px 15px #F9F9FB;
+}

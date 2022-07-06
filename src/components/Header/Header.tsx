@@ -13,7 +13,7 @@ export const Header = (props: Props) => {
     <header className={st.header}>
       <div className={st.logoBlock}>
         <img src='./../../assets/svg/logo.svg' alt={"Logo"} />
-        <SearchInput />
+        <SearchInput placeholder={'Поиск'}/>
       </div>
       <div className={st.profileBlock}>
         <div className={st.calendar + ' ' + st.icon}>
