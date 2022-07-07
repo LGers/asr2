@@ -1,15 +1,20 @@
 import st from './RegistriesSection.module.css';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { setRegistries } from '../../../redux/main/mainSlice';
 import { fakeRegistryItems } from '../../../__mock__/fakeregistryItems';
+import { RootState } from '../../../redux/store';
+import { RegistryItem } from './RegistryItem';
 
 type Props = {
 
 };
 
+// const registries =
 export const RegistriesSection = (props: Props) => {
+  const registries = useSelector((state: RootState) => state.main.registries);
   const dispatch = useDispatch();
+  const rTable = registries.map((item) => <RegistryItem item={item} />);
 
   useEffect(() => {
     dispatch(setRegistries(fakeRegistryItems));
@@ -42,6 +47,7 @@ export const RegistriesSection = (props: Props) => {
         <div>Дата регистрации</div>
         <div>Адрес сайта</div>
       </div>
+      {rTable}
     </section>
   );
 };

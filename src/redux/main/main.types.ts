@@ -1,4 +1,4 @@
-export interface RegistryItems {
+export interface RegistryItemProps {
   id: number,
   appName: string,
   classCode: string,
@@ -17,6 +17,6 @@ export interface DocumentItem {
 }
 
 export interface MainState {
-  registries: Array<RegistryItems>;
+  registries: Array<RegistryItemProps>;
   documents: Array<DocumentItem>;
 }

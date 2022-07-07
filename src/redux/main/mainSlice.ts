@@ -1,4 +1,4 @@
-import { RegistryItems, MainState } from './main.types';
+import { RegistryItemProps, MainState } from './main.types';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 const initialState: MainState = {
@@ -10,7 +10,7 @@ export const mainSlice = createSlice({
   name: 'main',
   initialState,
   reducers: {
-    setRegistries: (state, action: PayloadAction<Array<RegistryItems>>) => {
+    setRegistries: (state, action: PayloadAction<Array<RegistryItemProps>>) => {
       console.log(action.payload);
       state.registries = action.payload;
     },

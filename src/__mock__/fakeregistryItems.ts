@@ -1,4 +1,4 @@
-import { RegistryItems } from '../redux/main/main.types';
+import { RegistryItemProps } from '../redux/main/main.types';
 
 export type RegistryRecords = 'id' | 'appName' | 'appClass' | 'classCode' | 'date' | 'link';
 
@@ -11,10 +11,10 @@ export type RegistryRecords = 'id' | 'appName' | 'appClass' | 'classCode' | 'dat
 //   link: string,
 // };
 
-export const fakeRegistryItems: Array<RegistryItems> = [
+export const fakeRegistryItems: Array<RegistryItemProps> = [
   {
     id: 1,
-    appName: 'Система управления базами данных «Ред База Данных»',
+    appName: 'Система управления\n базами данных\n «Ред База Данных»',
     classCode: '02.09',
     appClass: 'Системы управления базами данных',
     date: '29.01.2016',
