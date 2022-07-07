@@ -1,0 +1,37 @@
+.rItemContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  border-bottom: 1px solid #EDEDF4;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4D4D4F;
+  padding: 20px 0;
+}
+.itemId {
+  width: 188px;
+  padding-left: 34px;
+}
+
+.appName {
+  width: 166px;
+  /*padding-left: 34px;*/
+  margin-right: 40px;
+}
+
+.classCode {
+  width: 57px;
+  text-align: right;
+}
+
+.appClass {
+  width: 173px;
+  /*padding-left: 34px;*/
+}
+.link {
+  text-decoration-line: underline;
+  color: #009CB4;
+}

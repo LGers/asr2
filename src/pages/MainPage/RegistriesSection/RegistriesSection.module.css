@@ -1,0 +1,43 @@
+.rSection {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4D4D4F;
+  padding: 80px 115px;
+}
+
+.rHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  color: #009CB4;
+  padding: 20px 0;
+  margin: 40px auto 0 auto;
+  border-top: 1px solid #EDEDF4;
+  border-bottom: 1px solid #EDEDF4;
+}
+
+.rFilter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filterButtons {
+  cursor: pointer;
+}
+.sortContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.sortIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}

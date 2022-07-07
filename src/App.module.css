@@ -1,9 +1,17 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  color: #231F20;
 }
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  background-color: #707070;
 }
