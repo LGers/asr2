@@ -1,10 +1,20 @@
 import st from './RegistriesSection.module.css';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { setRegistries } from '../../../redux/main/mainSlice';
+import { fakeRegistryItems } from '../../../__mock__/fakeregistryItems';
 
 type Props = {
 
 };
 
 export const RegistriesSection = (props: Props) => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(setRegistries(fakeRegistryItems));
+  }, []);
+
   return (
     <section className={st.rSection}>
       <div className={st.rFilter}>
@@ -25,7 +35,7 @@ export const RegistriesSection = (props: Props) => {
           <div className={st.sortIcon}>
             <img src="../../../assets/svg/sort.svg" alt="sort" />
           </div>
-          <div>Наименовани программного обеспечения</div>
+          <div>Наименование программного обеспечения</div>
         </div>
         <div>Код класса</div>
         <div>Класс программного обеспечения</div>
