@@ -1,0 +1,1 @@
+export { RegistriesSection } from './RegistriesSection';
