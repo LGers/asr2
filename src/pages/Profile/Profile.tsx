@@ -8,6 +8,9 @@ export const Profile = () => {
       <Header notifications={4} />
       <main className={st.main}>
         <h1>Личный кабинет</h1>
+        <div className={st.profile}>
+
+        </div>
       </main>
       <Footer />
     </div>
