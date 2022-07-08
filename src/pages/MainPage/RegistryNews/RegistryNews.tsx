@@ -9,7 +9,7 @@ export const RegistryNews = (props: Props) => {
     <section className={st.rNews}>
       <h2>Новости реестра</h2>
       <div className={st.rNewsContainer}>
-        {fakeNews.map((item) => <NewsItem {...item} />)}
+        {fakeNews.map((item) => <NewsItem key={item.id} {...item} />)}
       </div>
     </section>
   );

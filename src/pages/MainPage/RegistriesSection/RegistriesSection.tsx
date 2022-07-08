@@ -7,15 +7,11 @@ import { RootState } from '../../../redux/store';
 import { RegistryItem } from './RegistryItem';
 import { Paginator } from '../../../components/Paginator/Paginator';
 
-type Props = {
 
-};
-
-// const registries =
-export const RegistriesSection = (props: Props) => {
+export const RegistriesSection = () => {
   const registries = useSelector((state: RootState) => state.main.registries);
   const dispatch = useDispatch();
-  const rTable = registries.map((item) => <RegistryItem item={item} />);
+  const rTable = registries.map((item) => <RegistryItem key={item.id} item={item} />);
 
   useEffect(() => {
     dispatch(setRegistries(fakeRegistryItems));
