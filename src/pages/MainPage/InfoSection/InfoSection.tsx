@@ -8,6 +8,7 @@ const totalUsers = 4272;
 const numToStr = (num: number): string => {
   return num.toLocaleString().replace(/,/gi, ' ')
 }
+
 export const InfoSection = () => {
   return (
     <section className={st.info}>
