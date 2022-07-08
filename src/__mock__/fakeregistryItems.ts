@@ -1,16 +1,5 @@
 import { RegistryItemProps } from '../redux/main/main.types';
 
-export type RegistryRecords = 'id' | 'appName' | 'appClass' | 'classCode' | 'date' | 'link';
-
-// export interface RegistryItems {
-//   id: number,
-//   appName: string,
-//   classCode: string,
-//   appClass: string;
-//   date: string,
-//   link: string,
-// };
-
 export const fakeRegistryItems: Array<RegistryItemProps> = [
   {
     id: 1,

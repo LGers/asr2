@@ -1,0 +1,36 @@
+.paginatorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.paginator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*padding: 40px;*/
+  border: 1px solid #EDEDF4;
+  border-radius: 5px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.paginator img {
+  /*width: 24px;*/
+  /*height: 24px;*/
+}
+
+.active {
+  background: #009CB4;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}

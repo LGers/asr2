@@ -13,7 +13,7 @@ export const RegistryItem = (props: Props) => {
       <div className={st.classCode}>{classCode}</div>
       <div className={st.appClass}>{appClass}</div>
       <div>{date}</div>
-      <div className={st.link}>Ссылка</div>
+      <a href="#" className={st.link}>Ссылка</a>
     </div>
   );
 };

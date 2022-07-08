@@ -1,0 +1,26 @@
+.newsCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 316px;
+}
+
+.newsInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsInfo article {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.newsInfo p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

@@ -5,6 +5,7 @@ import { setRegistries } from '../../../redux/main/mainSlice';
 import { fakeRegistryItems } from '../../../__mock__/fakeregistryItems';
 import { RootState } from '../../../redux/store';
 import { RegistryItem } from './RegistryItem';
+import { Paginator } from '../../../components/Paginator/Paginator';
 
 type Props = {
 
@@ -48,6 +49,7 @@ export const RegistriesSection = (props: Props) => {
         <div>Адрес сайта</div>
       </div>
       {rTable}
+      <Paginator />
     </section>
   );
 };
