@@ -4,6 +4,7 @@ import { InfoSection } from './InfoSection';
 import { RegistriesSection } from './RegistriesSection';
 import { RegistryNews } from './RegistryNews';
 import { Documents } from './Documents';
+import { Footer } from '../../components/Footer';
 
 export const MainPage = () => {
   return (
@@ -15,7 +16,7 @@ export const MainPage = () => {
         <RegistryNews />
         <Documents />
       </main>
-      Footer
+      <Footer />
     </div>
   );
 }
