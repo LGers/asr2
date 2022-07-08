@@ -1,17 +1,14 @@
-// @flow
 import * as React from 'react';
 import st from './InfoSection.module.css';
-import { SearchInput } from '../../../components/SearchInput';
 import { InfoInput } from '../../../components/InfoInput';
 
-type Props = {};
 const totalApps = 13438;
 const totalUsers = 4272;
 
 const numToStr = (num: number): string => {
   return num.toLocaleString().replace(/,/gi, ' ')
 }
-export const InfoSection = (props: Props) => {
+export const InfoSection = () => {
   return (
     <section className={st.info}>
       <div className={st.infoContainer}>
@@ -23,8 +20,6 @@ export const InfoSection = (props: Props) => {
             <p>Правообладателей: <span>{numToStr(totalUsers)}</span></p>
           </div>
         </div>
-        {/*<input type="text" placeholder={'Искать реестр...'} />*/}
-        {/*<SearchInput placeholder={'Искать реестр...'}/>*/}
         <form className={st.findForm} action="">
           <InfoInput placeholder={'Искать реестр...'} />
           <button className={st.findButton} type="submit">Искать</button>

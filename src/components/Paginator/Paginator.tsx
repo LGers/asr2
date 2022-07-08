@@ -12,9 +12,9 @@ export const Paginator = () => {
         <div className={st.button}>
           <img src="../../assets/svg/pag-arrow-left.svg" alt="" />
         </div>
-        {paginatorItems.map((item) => {
+        {paginatorItems.map((item, index) => {
           return (
-            <div className={st.button + ' ' + (item === 1 && st.active)}>
+            <div key={index} className={st.button + ' ' + (item === 1 && st.active)}>
               {item}
             </div>
           )

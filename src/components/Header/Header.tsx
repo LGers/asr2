@@ -5,6 +5,7 @@ import notification from '../../assets/svg/bell-blue.svg';
 import arrowUp from '../../assets/svg/upper-arrow.svg';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
+import { Link } from 'react-router-dom';
 
 export type Props = {
   notifications: number;
@@ -18,7 +19,7 @@ export const Header = (props: Props) => {
     <header className={st.header}>
       <div className={st.logoBlock}>
         <img src='./../../assets/svg/logo.svg' alt={"Logo"} />
-        <SearchInput placeholder={'Поиск'}/>
+        <SearchInput placeholder={'Поиск'} />
       </div>
       <div className={st.profileBlock}>
         <div className={st.calendar + ' ' + st.icon}>
@@ -28,16 +29,18 @@ export const Header = (props: Props) => {
           <img src={notification} alt="Bell" />
           <div className={st.notificationCount + ' ' + st.center}>{props.notifications}</div>
         </div>
-        <div className={st.divider}/>
-        <div className={st.profile}>
-          <div className={st.avatar}>
-            <img src="../../assets/img/user-avatar.jpg" alt="Avatar" />
+        <div className={st.divider} />
+        <Link to={'/profile'} className={st.link}>
+          <div className={st.profile}>
+            <div className={st.avatar}>
+              <img src="../../assets/img/user-avatar.jpg" alt="Avatar" />
+            </div>
+            <p className={st.profileName}>{userName}</p>
+            <div className={st.arrow && st.center}>
+              <img src={arrowUp} alt="Upper" />
+            </div>
           </div>
-          <p className={st.profileName}>{userName}</p>
-          <div className={st.arrow && st.center}>
-            <img src={arrowUp} alt="Upper" />
-          </div>
-        </div>
+        </Link>
       </div>
     </header>
   );

@@ -8,7 +8,7 @@ import { Footer } from '../../components/Footer';
 
 export const MainPage = () => {
   return (
-    <div className={st.st}>
+    <div className={st.wrapper}>
       <Header notifications={4} />
       <main>
         <InfoSection />

@@ -11,7 +11,6 @@ export const mainSlice = createSlice({
   initialState,
   reducers: {
     setRegistries: (state, action: PayloadAction<Array<RegistryItemProps>>) => {
-      console.log(action.payload);
       state.registries = action.payload;
     },
   },
