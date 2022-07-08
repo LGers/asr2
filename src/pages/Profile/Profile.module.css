@@ -4,4 +4,7 @@
 }
 
 .main {
+  padding: 40px 121px;
+  border-top: 1px solid #EDEDF4;
+  border-bottom: 1px solid #EDEDF4;
 }
