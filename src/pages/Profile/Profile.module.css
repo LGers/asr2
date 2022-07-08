@@ -8,3 +8,69 @@
   border-top: 1px solid #EDEDF4;
   border-bottom: 1px solid #EDEDF4;
 }
+
+.main h1 {
+  padding: 40px 0;
+}
+.profileContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 130px;
+}
+
+.profileSections {
+
+}
+
+.profileData {
+
+}
+/*.tab {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  gap: 10px;*/
+/*  color: #676A71;*/
+/*  border: 1px solid #EDEDF4;*/
+/*  padding: 20px;*/
+/*  width: 100%;*/
+/*  max-width: 270px;*/
+/*  font-style: normal;*/
+/*  font-weight: 500;*/
+/*  font-size: 18px;*/
+/*  line-height: 25px;*/
+/*  text-decoration: none;*/
+/*}*/
+
+/*.tab:hover {*/
+/*  border-color: #009cb4;*/
+/*}*/
+
+/*.firstTab {*/
+/*  border-radius: 5px 5px 0 0;*/
+/*}*/
+
+/*.activeTab {*/
+/*  border: 1px solid #009cb4;*/
+/*  color: #009cb4;*/
+/*}*/
+
+/*.activeTabSvg {*/
+/*  fill: #009cb4;*/
+/*}*/
+
+/*.tabSvg:hover {*/
+/*  fill: #009cb4;*/
+/*}*/
+
+/*.logout {*/
+/*  color: #E0371F;*/
+/*  border-radius: 0 0 5px 5px;*/
+/*}*/
+
+/*.logout:hover {*/
+/*  border-color: #E0371F;*/
+/*}*/
+
+/*.logoutSvg {*/
+/*  fill: #E0371F;*/
+/*}*/
