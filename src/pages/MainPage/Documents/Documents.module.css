@@ -1,0 +1,32 @@
+.documents {
+  padding: 40px 115px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #4D4D4F;
+}
+span {
+  color: #009CB4;
+}
+
+.documentsHeader {
+  /*display: flex;*/
+  /*justify-content: space-between;*/
+  display: grid;
+  grid-template-columns: 2fr 5fr 1fr 1fr 1fr;
+  color: #009CB4;
+  border-top: 1px solid #EDEDF4;
+  border-bottom: 1px solid #EDEDF4;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.documentsContainer {
+  display: grid;
+  grid-template-columns: 2fr 5fr 1fr 1fr 1fr;
+  gap: 80px;
+  border-bottom: 1px solid #EDEDF4;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}

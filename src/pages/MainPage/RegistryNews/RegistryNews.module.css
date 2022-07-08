@@ -1,0 +1,11 @@
+.rNews {
+  padding: 80px 115px;
+  background: #FBFBFB;
+}
+
+.rNewsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 40px;
+}
