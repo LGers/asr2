@@ -1,5 +1,76 @@
 .profileDataContainer {
   width: 100%;
   max-width: 770px;
-  background-color: #676a71;
+}
+.profileDataContainer h2 {
+  padding-top: 32px;
+}
+
+.profileNameAvatar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #EDEDF4;
+}
+
+.avatar {
+  width: 64px;
+  border-radius: 50%;
+  height: 64px;
+}
+
+.name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #231F20;
+}
+
+.profileData {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  border-bottom: 1px solid #EDEDF4;
+  padding: 36px 0;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.field label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A8AAAE;
+}
+
+.profilePassword {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  border-bottom: 1px solid #EDEDF4;
+  padding: 36px 0;
+}
+
+.submit {
+  padding: 36px 0;
+}
+
+.btn {
+  width: 270px;
+  height: 56px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background: #009CB4;
+  border: none;
+  border-radius: 5px;
 }
