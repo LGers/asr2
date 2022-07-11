@@ -1,10 +1,30 @@
+import { useForm, SubmitHandler } from "react-hook-form";
 import st from "./ProfileData.module.css";
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../redux/store';
 import { useEffect, useState } from 'react';
-import { FormField } from '../../../components/FormField';
+
+type Inputs = {
+  firstName: string,
+  lastName: string,
+  patronymic: string,
+  country: string,
+  password: string,
+  confirmPassword: string,
+  city: string,
+  phone: string;
+};
 
 export const ProfileData = () => {
+  const user = useSelector((state: RootState) => state.auth.user);
+
+  const { register, handleSubmit, watch, formState: { errors }, formState, reset } = useForm<Inputs>();
+
+  const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
+
+  useEffect(() => {
+    reset({ ...user });
+  }, []);
 
   // todo this test code. remove it
   let avatarUrl = '';
@@ -21,55 +41,67 @@ export const ProfileData = () => {
   }, [])
   // todo this test code. remove it
 
-  const user = useSelector((state: RootState) => state.auth.user);
-
   return (
     <section className={st.profileDataContainer}>
       <div className={st.profileNameAvatar}>
         <img className={st.avatar} src={ava} alt="Avatar" />
         <p className={st.name}>Здравствуй, {user.firstName}</p>
       </div>
-      <form>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <h2>Основные данные</h2>
         <div className={st.profileData}>
           <div className={st.field}>
-            <label htmlFor={'firstName'}>Имя </label>
-            <FormField
+            <label htmlFor={'firstName'}>Имя</label>
+            <input
               id={'firstName'}
-              name={'firstName'}
               type={'text'}
               placeholder={'Ваше имя'}
-              isError={false}
+              {...register("firstName")}
             />
           </div>
           <div className={st.field}>
             <label>Фамилия</label>
-            <FormField
-              id={'firstName'}
-              name={'firstName'}
+            <input
+              id={'lastName'}
               type={'text'}
-              placeholder={'Ваше имя'}
-              isError={false}
+              placeholder={'Ваша фамилия'}
+              {...register("lastName")}
             />
           </div>
           <div className={st.field}>
             <label>Отчество</label>
-            <FormField
+            <input
               id={'patronymic'}
-              name={'patronymic'}
               type={'text'}
               placeholder={'Ваше отчество'}
-              isError={false}
+              {...register("patronymic")}
             />
           </div>
           <div className={st.field}>
             <label>Страна</label>
-            <FormField
+            <input
               id={'country'}
-              name={'country'}
               type={'text'}
               placeholder={'Страна'}
-              isError={false}
+              {...register("country")}
+            />
+          </div>
+          <div className={st.field}>
+            <label>Город</label>
+            <input
+              id={'city'}
+              type={'text'}
+              placeholder={'Город'}
+              {...register("city")}
+            />
+          </div>
+          <div className={st.field}>
+            <label>Мобильный телефон</label>
+            <input
+              id={'phone'}
+              type={'text'}
+              placeholder={'Мобильный телефон'}
+              {...register("phone")}
             />
           </div>
         </div>
@@ -77,22 +109,20 @@ export const ProfileData = () => {
         <div className={st.profileData}>
           <div className={st.field}>
             <label>Новый пароль</label>
-            <FormField
+            <input
               id={'password'}
-              name={'password'}
-              type={'text'}
+              type={'password'}
               placeholder={'Новый пароль'}
-              isError={false}
+              {...register("password")}
             />
           </div>
           <div className={st.field}>
             <label>Подтверждение пароля</label>
-            <FormField
+            <input
               id={'confirmPassword'}
-              name={'confirmPassword'}
-              type={'text'}
+              type={'password'}
               placeholder={'Подтверждение пароля'}
-              isError={false}
+              {...register("confirmPassword")}
             />
           </div>
         </div>
