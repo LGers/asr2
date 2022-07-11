@@ -18,7 +18,16 @@ type Inputs = {
 export const ProfileData = () => {
   const user = useSelector((state: RootState) => state.auth.user);
 
-  const { register, handleSubmit, watch, formState: { errors }, formState, reset } = useForm<Inputs>();
+  const { register, handleSubmit, watch, formState: { errors }, formState, reset } = useForm<Inputs>({
+    defaultValues: {
+      firstName: user.firstName,
+      lastName: user.lastName,
+      patronymic: user.patronymic,
+      country: user.country,
+      city: user.city,
+      phone: user.phone
+    },
+  });
 
   const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
 
